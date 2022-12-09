@@ -1,0 +1,27 @@
+version: '3'
+services:
+  api-core:
+    build:
+      target: deploy
+      args:
+        APPNAME: 'api-core'
+    ports:
+      - 3000:3000
+  svc-keys:
+    build:
+      target: deploy
+      args:
+        APPNAME: 'svc-keys'
+    ports:
+      - 4001:4001
+    # expose:
+    #   - 4001
+  svc-values:
+    build:
+      target: deploy
+      args:
+        APPNAME: 'svc-values'
+    ports:
+      - 4002:4002
+    # expose:
+    #   - 4002

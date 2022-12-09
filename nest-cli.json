@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api-core/src",
+  "monorepo": true,
+  "root": "apps/api-core",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/api-core/tsconfig.app.json"
+  },
+  "projects": {
+    "api-core": {
+      "type": "application",
+      "root": "apps/api-core",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-core/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-core/tsconfig.app.json"
+      }
+    },
+    "svc-values": {
+      "type": "application",
+      "root": "apps/svc-values",
+      "entryFile": "main",
+      "sourceRoot": "apps/svc-values/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/svc-values/tsconfig.app.json"
+      }
+    },
+    "svc-keys": {
+      "type": "application",
+      "root": "apps/svc-keys",
+      "entryFile": "main",
+      "sourceRoot": "apps/svc-keys/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/svc-keys/tsconfig.app.json"
+      }
+    }
+  }
+}
