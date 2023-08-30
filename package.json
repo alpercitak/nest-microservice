@@ -8,6 +8,7 @@
   "scripts": {
     "start:dev": "turbo start:dev",
     "build": "turbo build",
-    "test": "turbo test"
+    "test": "turbo test",
+    "test:watch": "turbo test:watch"
   }
 }

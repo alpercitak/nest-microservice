@@ -5,6 +5,10 @@
       "cache": false,
       "persistent": true
     },
+    "test": {
+      "cache": true
+    },
+    "test:watch": {},
     "build": {
       "dependsOn": ["^build"]
     }
