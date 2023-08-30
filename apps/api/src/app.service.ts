@@ -4,6 +4,7 @@ import {
   Transport,
   ClientProxy,
 } from '@nestjs/microservices';
+import { MessagePatternKeys } from '@nest-microservice/lib';
 
 @Injectable()
 export class AppService {
@@ -34,11 +35,11 @@ export class AppService {
 
   public async getHello(name: string): Promise<string> {
     const key = await this.clientKeys
-      .send<string, string>('get-hello-key', '')
+      .send<string, string>(MessagePatternKeys.GetHelloKey, '')
       .toPromise();
 
     const value = await this.clientValues
-      .send<string, string>('get-hello-value', name)
+      .send<string, string>(MessagePatternKeys.GetHelloValue, name)
       .toPromise();
 
     return `${key} ${value}`;
