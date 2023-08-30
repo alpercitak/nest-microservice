@@ -1,27 +1,28 @@
 version: '3.8'
 services:
-  api-core:
+  api:
     build:
       target: deploy
       args:
-        APPNAME: 'api-core'
+        APP_NAME: 'api'
+    environment:
+      SERVICE_KEYS_HOST: 'service-keys'
+      SERVICE_KEYS_PORT: 4001
+      SERVICE_VALUES_HOST: 'service-values'
+      SERVICE_VALUES_PORT: 4002
     ports:
       - 3000:3000
-  svc-keys:
+  service-keys:
     build:
       target: deploy
       args:
-        APPNAME: 'svc-keys'
+        APP_NAME: 'service-keys'
     ports:
       - 4001:4001
-    # expose:
-    #   - 4001
-  svc-values:
+  service-values:
     build:
       target: deploy
       args:
-        APPNAME: 'svc-values'
+        APP_NAME: 'service-values'
     ports:
       - 4002:4002
-    # expose:
-    #   - 4002

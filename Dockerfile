@@ -1,32 +1,36 @@
 FROM node:18-alpine AS base
 
+WORKDIR /app
 RUN npm i -g pnpm
+COPY pnpm-lock.yaml ./
 RUN pnpm fetch
 
-FROM base AS dependencies
-
-WORKDIR /app
-COPY package.json pnpm-lock.yaml tsconfig.json tsconfig.build.json nest-cli.json ./
-RUN pnpm install
+COPY . .
 
 FROM base AS build
 
-ARG APPNAME
-RUN echo build: ${APPNAME}
-
 WORKDIR /app
-COPY ./apps/$APPNAME .
-COPY --from=dependencies /app/package.json /app/pnpm-lock.yaml /app/tsconfig.json /app/tsconfig.build.json ./ 
-COPY --from=dependencies /app/node_modules ./node_modules
-RUN pnpm build
-RUN pnpm prune --prod
+
+ARG APP_NAME
+RUN echo build: ${APP_NAME}
+
+RUN pnpm --filter="${APP_NAME}" i -r
+RUN pnpm --filter="${APP_NAME}" run build
+
+RUN rm -rf ./node_modules
+RUN rm -rf ./apps/${APP_NAME}/node_modules
+RUN pnpm --filter="${APP_NAME}" i -r --prod
 
 FROM node:18-alpine AS deploy
 
-ARG APPNAME
-RUN echo deploy: ${APPNAME}
-
 WORKDIR /app
-COPY --from=build /app/dist/ ./dist/
-COPY --from=build /app/node_modules ./node_modules
-CMD [ "node", "dist/main.js" ]
+
+ARG APP_NAME
+RUN echo deploy: ${APP_NAME}
+
+COPY --from=build /app/node_modules/ ./node_modules
+COPY --from=build /app/apps/${APP_NAME}/node_modules ./apps/${APP_NAME}/node_modules
+COPY --from=build /app/apps/${APP_NAME}/dist ./apps/${APP_NAME}/dist
+
+ENV APP_ENTRY="apps/${APP_NAME}/dist/main.js"
+CMD "node" ${APP_ENTRY}
