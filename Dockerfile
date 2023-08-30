@@ -5,7 +5,16 @@ RUN npm i -g pnpm
 COPY pnpm-lock.yaml ./
 RUN pnpm fetch
 
+RUN npm i -g turbo
+
 COPY . .
+
+FROM base AS prepare
+
+WORKDIR /app
+
+ARG APP_NAME
+RUN turbo prune --scope="${APP_NAME}" --docker
 
 FROM base AS build
 
@@ -14,12 +23,12 @@ WORKDIR /app
 ARG APP_NAME
 RUN echo build: ${APP_NAME}
 
-RUN pnpm --filter="${APP_NAME}" i -r
-RUN pnpm --filter="${APP_NAME}" run build
+RUN pnpm i -r --offline --filter="${APP_NAME}"
+RUN pnpm turbo build --filter="${APP_NAME}" 
 
 RUN rm -rf ./node_modules
 RUN rm -rf ./apps/${APP_NAME}/node_modules
-RUN pnpm --filter="${APP_NAME}" i -r --prod
+RUN pnpm i -r --offline --prod --filter="${APP_NAME}"
 
 FROM node:18-alpine AS deploy
 
@@ -28,9 +37,6 @@ WORKDIR /app
 ARG APP_NAME
 RUN echo deploy: ${APP_NAME}
 
-COPY --from=build /app/node_modules/ ./node_modules
-COPY --from=build /app/apps/${APP_NAME}/node_modules ./apps/${APP_NAME}/node_modules
-COPY --from=build /app/apps/${APP_NAME}/dist ./apps/${APP_NAME}/dist
-
+COPY --from=build /app .
 ENV APP_ENTRY="apps/${APP_NAME}/dist/main.js"
 CMD "node" ${APP_ENTRY}
