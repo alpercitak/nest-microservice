@@ -10,5 +10,9 @@
     "build": "turbo build",
     "test": "turbo test",
     "test:watch": "turbo test:watch"
-  }
+  },
+  "devDependencies": {
+    "turbo": "2.5.4"
+  },
+  "packageManager": "pnpm@10.11.1"
 }
