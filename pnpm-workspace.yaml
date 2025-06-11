@@ -1,5 +1,11 @@
 packages:
   - apps/*
   - packages/*
+
 onlyBuiltDependencies:
   - '@nestjs/core'
+
+catalog:
+  "@types/node": "^24.0.0"
+  typescript: ^5.8.3
+  
