@@ -9,7 +9,8 @@
     "start:dev": "turbo start:dev",
     "build": "turbo build",
     "test": "turbo test",
-    "test:watch": "turbo test:watch"
+    "test:watch": "turbo test:watch",
+    "lint": "turbo lint"
   },
   "devDependencies": {
     "turbo": "2.5.4"
