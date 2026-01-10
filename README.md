@@ -10,7 +10,7 @@ $ pnpm install
 
 ```bash
 # watch mode
-$ pnpm start:dev
+$ pnpm dev
 
 # build
 $ pnpm build
