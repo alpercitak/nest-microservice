@@ -26,7 +26,7 @@ catalog:
 
 catalogs:
   nestjs@10:
-    "@nestjs/cli": ^10.0.0
+    "@nestjs/cli": ^11.0.0
     "@nestjs/common": ^10.0.0
     "@nestjs/core": ^10.0.0
     "@nestjs/microservices": ^11.0.0
