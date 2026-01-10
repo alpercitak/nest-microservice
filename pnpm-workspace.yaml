@@ -31,7 +31,7 @@ catalogs:
     "@nestjs/core": ^10.0.0
     "@nestjs/microservices": ^10.2.2
     "@nestjs/platform-express": ^10.0.0
-    "@nestjs/schematics": ^10.0.0
+    "@nestjs/schematics": ^11.0.0
     "@nestjs/testing": ^10.0.0
 
   eslint@9:
@@ -43,4 +43,3 @@ catalogs:
     "eslint-config-prettier": ^10.1.5
     "eslint-plugin-prettier": ^5.4.1
     "globals": ^16.2.0
-
