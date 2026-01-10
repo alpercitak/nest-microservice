@@ -87,8 +87,8 @@ catalogs:
       specifier: ^10.0.0
       version: 10.4.21
     '@nestjs/microservices':
-      specifier: ^10.2.2
-      version: 10.4.21
+      specifier: ^11.0.0
+      version: 11.1.11
     '@nestjs/platform-express':
       specifier: ^10.0.0
       version: 10.4.21
@@ -117,10 +117,10 @@ importers:
         version: 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: catalog:nestjs@10
         version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)
@@ -145,7 +145,7 @@ importers:
         version: 10.2.3(chokidar@3.6.0)(typescript@5.9.3)
       '@nestjs/testing':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)
       '@types/express':
         specifier: 'catalog:'
         version: 5.0.6
@@ -214,10 +214,10 @@ importers:
         version: 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: catalog:nestjs@10
         version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)
@@ -236,7 +236,7 @@ importers:
         version: 10.2.3(chokidar@3.6.0)(typescript@5.9.3)
       '@nestjs/testing':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)
       '@types/express':
         specifier: 'catalog:'
         version: 5.0.6
@@ -302,10 +302,10 @@ importers:
         version: 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: catalog:nestjs@10
         version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)
@@ -324,7 +324,7 @@ importers:
         version: 10.2.3(chokidar@3.6.0)(typescript@5.9.3)
       '@nestjs/testing':
         specifier: catalog:nestjs@10
-        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)
+        version: 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)
       '@types/express':
         specifier: 'catalog:'
         version: 5.0.6
@@ -830,13 +830,13 @@ packages:
       '@nestjs/websockets':
         optional: true
 
-  '@nestjs/microservices@10.4.21':
-    resolution: {integrity: sha512-YiE3ngoRxKhWfZm4mALBgr3bTy2W9GXhUJJRigHbQIIOCrytDeOmbpcQPtZCbAOAM9vEvegxawp0I45ZdrzaaQ==}
+  '@nestjs/microservices@11.1.11':
+    resolution: {integrity: sha512-nqOdHk0QHmaloWTBb+6enT+OIT5atqjEHWKaaSoQfAlJVGa7FVhgdNVcWBdDcPtNQM6hCTc8VGgQHIRDDhjFOw==}
     peerDependencies:
       '@grpc/grpc-js': '*'
-      '@nestjs/common': ^10.0.0
-      '@nestjs/core': ^10.0.0
-      '@nestjs/websockets': ^10.0.0
+      '@nestjs/common': ^11.0.0
+      '@nestjs/core': ^11.0.0
+      '@nestjs/websockets': ^11.0.0
       amqp-connection-manager: '*'
       amqplib: '*'
       cache-manager: '*'
@@ -3908,7 +3908,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/core@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/core@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nuxtjs/opencollective': 0.3.2
@@ -3920,15 +3920,15 @@ snapshots:
       tslib: 2.8.1
       uid: 2.0.2
     optionalDependencies:
-      '@nestjs/microservices': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/microservices': 11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)
     transitivePeerDependencies:
       - encoding
 
-  '@nestjs/microservices@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/microservices@11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       iterare: 1.2.1
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
@@ -3937,7 +3937,7 @@ snapshots:
   '@nestjs/platform-express@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)':
     dependencies:
       '@nestjs/common': 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       body-parser: 1.20.3
       cors: 2.8.5
       express: 4.22.1
@@ -3968,13 +3968,13 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@nestjs/testing@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)':
+  '@nestjs/testing@10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)':
     dependencies:
       '@nestjs/common': 10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@10.4.21)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.11)(@nestjs/platform-express@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       tslib: 2.8.1
     optionalDependencies:
-      '@nestjs/microservices': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/microservices': 11.1.11(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express': 10.4.21(@nestjs/common@10.4.21(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.21)
 
   '@noble/hashes@1.8.0': {}
