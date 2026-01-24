@@ -3,11 +3,11 @@ services:
     build:
       target: deploy
       args:
-        APP_NAME: 'api'
+        APP_NAME: "api"
     environment:
-      SERVICE_KEYS_HOST: 'service-keys'
+      SERVICE_KEYS_HOST: "service-keys"
       SERVICE_KEYS_PORT: 4001
-      SERVICE_VALUES_HOST: 'service-values'
+      SERVICE_VALUES_HOST: "service-values"
       SERVICE_VALUES_PORT: 4002
     ports:
       - 3000:3000
@@ -15,13 +15,13 @@ services:
     build:
       target: deploy
       args:
-        APP_NAME: 'service-keys'
+        APP_NAME: "service-keys"
     ports:
       - 4001:4001
   service-values:
     build:
       target: deploy
       args:
-        APP_NAME: 'service-values'
+        APP_NAME: "service-values"
     ports:
       - 4002:4002
