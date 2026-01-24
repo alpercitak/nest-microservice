@@ -1,4 +1,4 @@
-![CI](https://github.com/alpercitak/nest-microservice/actions/workflows/ci.yml/badge.svg)
+![Build](https://github.com/alpercitak/nest-microservice/actions/workflows/build.yaml/badge.svg)
 
 ## Installation
 
