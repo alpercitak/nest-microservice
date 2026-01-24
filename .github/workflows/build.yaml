@@ -1,31 +1,32 @@
 name: build
- 
+
 on:
   push:
-    branches: 
-      - '**'
-
+    branches: [main]
   pull_request:
-    branches:
-      - '**'
-      
+    branches: ["**"]
+
 jobs:
   build:
-    timeout-minutes: 15
+    timeout-minutes: 10
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - uses: actions/checkout@v6
- 
+        with:
+          persist-credentials: true
+
       - uses: pnpm/action-setup@v4
- 
+        with:
+          run_install: false
+
       - uses: actions/setup-node@v6
         with:
-          node-version: 24
-          cache: 'pnpm'
- 
-      - name: Install dependencies
-        run: pnpm install
- 
-      - name: Build
-        run: pnpm build
+          node-version: "24"
+          cache: "pnpm"
+
+      - run: pnpm i --frozen-lockfile
+
+      - run: pnpm build
