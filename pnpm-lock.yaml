@@ -56,14 +56,17 @@ catalogs:
       specifier: ^3.3.1
       version: 3.3.4
     '@eslint/js':
-      specifier: ^9.28.0
-      version: 9.39.3
+      specifier: ^10.0.0
+      version: 10.0.1
     '@typescript-eslint/eslint-plugin':
       specifier: ^8.34.0
       version: 8.56.1
     '@typescript-eslint/parser':
       specifier: ^8.34.0
       version: 8.55.0
+    eslint:
+      specifier: ^9.28.0
+      version: 9.39.3
     eslint-config-prettier:
       specifier: ^10.1.5
       version: 10.1.8
@@ -133,7 +136,7 @@ importers:
         version: 3.3.4
       '@eslint/js':
         specifier: catalog:eslint@9
-        version: 9.39.3
+        version: 10.0.1(eslint@9.39.3)
       '@nestjs/cli':
         specifier: catalog:nestjs@11
         version: 11.0.16(@types/node@25.3.0)
@@ -629,6 +632,15 @@ packages:
   '@eslint/eslintrc@3.3.4':
     resolution: {integrity: sha512-4h4MVF8pmBsncB60r0wSJiIeUKTSD4m7FmTFThG8RHlsg9ajqckLm9OraguFGZE4vVdpiI1Q4+hFnisopmG6gQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@10.0.1':
+    resolution: {integrity: sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+    peerDependencies:
+      eslint: ^10.0.0
+    peerDependenciesMeta:
+      eslint:
+        optional: true
 
   '@eslint/js@9.39.3':
     resolution: {integrity: sha512-1B1VkCq6FuUNlQvlBYb+1jDu/gV297TIs/OeiaSR9l1H27SVW55ONE1e1Vp16NqP683+xEGzxYtv4XCiDPaQiw==}
@@ -3672,6 +3684,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@eslint/js@10.0.1(eslint@9.39.3)':
+    optionalDependencies:
+      eslint: 9.39.3
+
   '@eslint/js@9.39.3': {}
 
   '@eslint/object-schema@2.1.7': {}
@@ -6401,7 +6417,7 @@ snapshots:
   terser@5.46.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.15.0
+      acorn: 8.16.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
