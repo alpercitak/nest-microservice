@@ -12,6 +12,9 @@ catalogs:
     '@types/jest':
       specifier: ^30.0.0
       version: 30.0.0
+    '@types/node':
+      specifier: ^25.0.0
+      version: 25.3.2
     '@types/supertest':
       specifier: ^7.0.0
       version: 7.2.0
@@ -70,9 +73,6 @@ catalogs:
     eslint-plugin-prettier:
       specifier: ^5.4.1
       version: 5.5.5
-    globals:
-      specifier: ^17.0.0
-      version: 17.3.0
   nestjs@11:
     '@nestjs/cli':
       specifier: ^11.0.0
@@ -172,7 +172,7 @@ importers:
         version: 5.5.5(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@10.0.2))(eslint@10.0.2)(prettier@3.8.1)
       globals:
         specifier: catalog:eslint@9
-        version: 17.3.0
+        version: 17.4.0
       jest:
         specifier: 'catalog:'
         version: 30.2.0(@types/node@25.3.2)(ts-node@10.9.2(@types/node@25.3.2)(typescript@5.9.3))
@@ -2130,8 +2130,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.3.0:
-    resolution: {integrity: sha512-yMqGUQVVCkD4tqjOJf3TnrvaaHDMYp4VlUSObbkIiuCPe/ofdMBFIAcBbCSRFWOnos6qRiTVStDwqPLUclaxIw==}
+  globals@17.4.0:
+    resolution: {integrity: sha512-hjrNztw/VajQwOLsMNT1cbJiH2muO3OROCHnbehc8eY5JyD2gqz4AcMHPqgaOR59DjgUjYAYLeH699g/eWi2jw==}
     engines: {node: '>=18'}
 
   gopd@1.2.0:
@@ -5318,7 +5318,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.3.0: {}
+  globals@17.4.0: {}
 
   gopd@1.2.0: {}
 
