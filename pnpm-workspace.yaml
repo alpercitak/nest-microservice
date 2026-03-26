@@ -17,7 +17,7 @@ catalog:
   ts-jest: ^29.3.4
   ts-loader: ^9.5.2
   ts-node: ^10.9.2
-  typescript: ^5.8.3
+  typescript: ^6.0.0
 
   "@types/express": ^5.0.3
   "@types/jest": ^30.0.0
